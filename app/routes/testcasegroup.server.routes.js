@@ -9,7 +9,7 @@ var users = require('../../app/controllers/users.server.controller'),
 module.exports = function(app) {
     // Article Routes
     app.route('/testcasegroups')
-        .get(users.requiresLogin, testcasegroup.list)
+        .get(testcasegroup.list)
         .post(users.requiresLogin, testcasegroup.create);
 
     app.route('/testcasegroups/:testcasegroupId')
