@@ -1,0 +1,9 @@
+<section data-ng-controller="ChooseGroupController">
+    <h1 style="text-align: center;">Choose TestCase Game</h1>
+    <div class="list-group">
+        <a class="list-group-item" ng-repeat="item in listGroups" ui-sref="home({gameId: item._id})">
+        {{item.name}} - 
+        <small>{{item.author}}</small>
+        </a>
+    </div>
+</section>

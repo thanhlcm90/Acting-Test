@@ -1,0 +1,118 @@
+<section data-ng-controller="MainController">
+    <div class="notepad-bg">
+        <div class="left-bar">
+            <div class="line"></div>
+            <div class="button dialog-btn active" ng-click="btnChangeScreenClick('dialog')">
+                <span class="text">Dialog</span>
+                <span class="button-pad" />
+            </div>
+            <div class="button hint-btn" ng-click="btnChangeScreenClick('hint')">
+                <span class="text">Hints</span>
+                <span class="button-pad" />
+            </div>
+            <div class="button framework-btn" ng-click="btnChangeScreenClick('framework')">
+                <span class="text">Framework</span>
+                <span class="button-pad" />
+            </div>
+            <div class="button answer-btn" ng-click="btnChangeScreenClick('answer')">
+                <span class="text">Answer</span>
+                <span class="button-pad" />
+            </div>
+            <div class="button help-btn" ng-click="btnChangeScreenClick('help')">
+                <span class="text">Help</span>
+                <span class="button-pad" />
+            </div>
+        </div>
+        <div class="main-contain" resizable>
+            <div class="splitter"></div>
+            <div class="dialog">
+                <h1 class="title">Dialog</h1>
+                <div class="main-content dialog-content" resizable opt-top="160">
+                    <div class="scroll-content">
+                        <div ng-repeat="item in dialogData">
+                            <div ng-if="item.type=='begin_text'" ui-drag-text="item">
+                                <p ng-bind-html="item.content | html"></p>
+                            </div>
+                            <div class="testcase-item" ng-if="['info','notfound','message'].indexOf(item.type)>-1" ui-drag-text="item">
+                                <br />
+                                <p class="game-description"><span style="font-weight: bold;"> ></span> You inquired information on {{item.keywords_found}}: {{item.reasoning}}</p>
+                                <p ng-class="{'notepad-note': item.type=='message'}" ng-bind-html="item.content | html"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-group">
+                        <label>Information inquired</label>
+                        <input type="text" ng-model="model.inquired" ng-enter="inquiredEnter()">
+                    </div>
+                    <div class="input-group">
+                        <label>Reasoning</label>
+                        <input type="text" ng-model="model.reasoning" ng-enter="inquiredEnter()">
+                    </div>
+                </div>
+            </div>
+            <div class="notepad">
+                <div>
+                    <h1 class="title">Notepad</h1>
+                    <div class="main-content notepad-content" resizable opt-top="160">
+                        <ul class="scroll-content" ui-drop-text="dropData($data)" ui-sortable ng-model="notepadData">
+                            <li ng-repeat="item in notepadData">
+                                <div ng-if="item.type=='begin_text'">
+                                    <p ng-bind-html="item.content | html"></p>
+                                </div>
+                                <div class="testcase-item" ng-if="item.type=='info'">
+                                    <span class="game-description-red" ng-if="$index==0?true:(notepadData[$index-1].parent_keyword !== item.parent_keyword)">
+                                        <br />
+                                        >&nbsp;
+                                        {{item.parent_keyword}}
+                                        <br />
+                                    </span>
+                                    <span class="game-description">{{item.child_keyword}}: {{item.reasoning}}</span>
+                                    <br />
+                                    <span ng-bind-html="item.content | html"></span>
+                                </div>
+                                <div class="testcase-item" ng-if="item.type=='message' || item.type=='notfound'">
+                                    <br />
+                                    <span class="game-description-red">>&nbsp;{{item.child_keyword}}</span>
+                                    <span class="game-description">{{item.reasoning}}</span>
+                                    <br />
+                                    <span ng-bind-html="item.content | html"></span>
+                                </div>
+                                <div class="testcase-item" ng-if="item.type=='note'">
+                                    <br />
+                                    <span class="notepad-note">Note: {{item.content}}</span>
+                                </div>
+                                <div class="testcase-item" ng-if="item.type=='answer'">
+                                    <br />
+                                    <span class="notepad-note" style="font-weight: bold;">Q{{item.state}} ANSWER</span>
+                                    <br />
+                                    <span class="notepad-note">{{item.content}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="input-group">
+                            <label>Note</label>
+                            <input type="text" ng-model="model.note" ng-enter="noteEnter()">
+                        </div>
+                        <div class="input-group">
+                            <label>Answer</label>
+                            <div class="input-button-group">
+                                <input type="text" ng-model="model.answer" ng-enter="answerEnter()">
+                                <span class="button next-btn" ng-click="btnNextClick()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+$(".main-contain .main-content .scroll-content").slimScroll({
+    height: '100%',
+    width: '100%'
+});
+</script>

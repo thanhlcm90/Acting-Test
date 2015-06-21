@@ -1,0 +1,47 @@
+<section data-ng-controller="TestCaseGroupsInfoController" data-ng-init="findOne()">
+    <div id="article-body">
+        <div class="page-header">
+            <h1 data-ng-bind="testcasegroup.name"></h1>
+            <div class="pull-right" style="margin-top: -45px;" data-ng-show="authentication.user._id == testcasegroup.user_created._id">
+                <a class="btn btn-primary" href="/admin#!/testcasegroups/{{testcasegroup._id}}/edit" data-toggle="tooltip" data-placement="bottom" title="Edit">
+                    <i class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-primary" data-ng-click="remove();" data-toggle="tooltip" data-placement="bottom" title="Remove">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </a>
+            </div>
+        </div>
+        <small>
+            <div class="pull-right" data-ng-show="authentication.user._id == testcasegroup.user_created._id">
+                <a class="btn btn-primary" href="/admin#!/testcasegroups/{{testcasegroup._id}}/testcases/create" data-toggle="tooltip" data-placement="bottom" title="New Testcase">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </a>
+            </div>
+            <em class="text-muted">
+                Created at
+                <span data-ng-bind="testcasegroup.date_created | date:'mediumDate'"></span>
+                by
+                <span data-ng-bind="testcasegroup.author"></span>
+            </em>
+        </small>
+        <p>{{testcasegroup.note}}</p>
+    </div>
+    <div loading-container="tableParams.settings().$loading">
+        <table ng-table="tableParams" cellpadding="0" cellspacing="0" class="table ng-table-rowselected" id="listData">
+            <tbody>
+                <tr data-ng-repeat="item in $data" data-ng-click="rowClick(item._id)" class="table-row">
+                    <td data-title="'ID'" sortable="'code'">{{item.code}}</td>
+                    <td data-title="'Type'" sortable="'type'">{{listTypes[item.type]}}</td>
+                    <td data-title="'State No.'" sortable="'state'">{{item.state}}</td>
+                    <td data-title="'Keywords'" sortable="'keywords'">{{joinArray(item.keywords)}}</td>
+                    <td data-title="'Parent ID'" sortable="'parent_code'">{{item.parent_code}}</td>
+                    <td data-title="'Content'" sortable="'content'"><p ng-bind-html="item.content | html"></p></td>
+                    <td data-title="'Reasoning'" sortable="'reasoning'">{{item.reasoning}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-if="testcases.length==0">
+        No Testcase. <a href="/admin#!/testcasegroups/{{testcasegroup._id}}/testcases/create">Create new</a>
+    </div>
+</section>

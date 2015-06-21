@@ -1,0 +1,280 @@
+body {
+    overflow: hidden;
+}
+
+.app:before {
+    background-color: #fff;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.undecorated-link:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #080808;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fade-in.ng-enter {
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.fade-in.ng-leave {
+  -webkit-animation: fadeOut 0.5s;
+          animation: fadeOut 0.5s;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+.notepad-bg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/a2.png");
+    display: table;
+}
+
+.left-bar {
+    background: #e9e9e9;
+    width: 200px;
+    display: table-cell;
+}
+
+.left-bar .button {
+    width: 130px;
+    height: 40px;
+    padding-left: 10px;
+    color: white;
+    margin-left: 60px;
+}
+
+.left-bar .button.active {
+    margin-left: 40px;
+    width: 150px;
+}
+
+.left-bar .button .text {
+    margin-top: 8px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.left-bar .button .button-pad {
+    background: #c3c5c4;
+    width: 20px;
+    float: right;
+    height: 100%;
+}
+
+.left-bar .button.active .button-pad {
+    width: 40px;
+}
+
+.left-bar .line {
+    background-image: url("../img/a3.png");
+    float: right;
+    width: 18px;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.main-contain {
+    display: table-cell;
+}
+
+.main-contain .dialog {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.main-contain .notepad {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.main-contain .notepad > div {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.main-contain .title {
+    background: #fff;
+    margin-top: 0px;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-contain .splitter {
+    background: url("../img/a1.png");
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: 100px;
+}
+
+.main-contain .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.main-contain .notepad-content {
+    padding-right: 60px;
+}
+
+.main-contain .main-content ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+
+.main-contain .main-content ul > li {
+    cursor: pointer;
+}
+
+.input-group {
+    margin: 10px;
+}
+
+.notepad .input-group {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.input-group > input {
+    background: #9ecad4;
+    opacity: 0.8;
+    border: 0px;
+    height: 34px;
+    width: 100%;
+}
+
+.input-group > .input-button-group {
+    background: #9ecad4;
+    opacity: 0.8;
+    border: 0px;
+    height: 34px;
+    width: 100%;
+}
+
+.input-group > .input-button-group > input {
+    border: 0px;
+    float: left;
+    margin-right: 34px;
+    width: 100%;
+    background: transparent;
+    height: 32px;
+}
+
+.input-group > .input-button-group > .button {
+    float: right;
+    height: 34px;
+    width: 34px;
+    margin-top: -34px;
+}
+
+.next-btn {
+    background-image: url("../img/a4.png");
+    background-size: 34px 34px;
+}
+
+.dialog-btn {
+    margin-top: 60px;
+    background: #668768;
+}
+
+.hint-btn {
+    background: #87b6c0;
+    margin-top: 30px;
+}
+
+.framework-btn {
+    background: #bfb486;
+    margin-top: 30px;
+}
+
+.answer-btn {
+    background: #b093c3;
+    margin-top: 100px;
+}
+
+.help-btn {
+    background: #b093c3;
+    margin-top: 30px;
+}
+
+.list-group {
+    border-radius: 2px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin: auto;
+    width: 400px;
+}
+
+.list-group-item {
+    border-color: #edf1f2;
+    border-left-width: 3px;
+    padding-right: 15px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.list-group-item:hover {
+    background-color: #f6f8f8;
+}
+
+.list-item-active {
+    border-left-color: #23b7e5 !important;
+    background-color: #f6f8f8 !important;
+}
+
+a.list-group-item {
+    color: #555;
+}
+
+.game-description {
+    color: #395fab;
+}
+
+.game-description-red {
+    color: #fd0203;
+    font-weight: bold;
+}
+
+.notepad-note {
+    color: #3fb77a;
+}

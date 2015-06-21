@@ -1,0 +1,16 @@
+<section data-ng-controller="TestCaseGroupsController">
+    <div loading-container="tableParams.settings().$loading">
+        <table ng-table="tableParams" cellpadding="0" cellspacing="0" class="table ng-table-rowselected" id="listData">
+            <tbody>
+                <tr data-ng-repeat="item in $data" data-ng-click="rowClick(item._id)" class="table-row">
+                    <td data-title="'Name'" sortable="'name'">{{item.name}}</td>
+                    <td data-title="'Author'" sortable="'author'">{{item.author}}</td>
+                    <td data-title="'Note'" sortable="'note'">{{item.note}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-if="testcasegroups.$resolved && !testcasegroups.length">
+        No data. <a href="/admin#!/articles/create">Create new</a>
+    </div>
+</section>
