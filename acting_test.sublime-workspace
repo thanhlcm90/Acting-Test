@@ -4,32 +4,80 @@
 		"selected_items":
 		[
 			[
-				"mar",
+				"parent_",
+				"parent_keyword"
+			],
+			[
+				"notepad",
+				"notepadData"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"current",
+				"currentState"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"key",
+				"keyword〔argument〕"
+			],
+			[
+				"inf",
+				"infoP"
+			],
+			[
+				"keys",
+				"keywords"
+			],
+			[
+				"res",
+				"resizableDirective"
+			],
+			[
+				"upl",
+				"uploads"
+			],
+			[
+				"requi",
+				"required〔variable〕"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"marg",
 				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"ext",
+				"extraTop"
 			],
 			[
 				"ali",
 				"vertical-align"
 			],
 			[
-				"pad",
-				"padding-left"
-			],
-			[
 				"margin",
 				"margin-top"
 			],
 			[
-				"marg",
-				"margin-left"
-			],
-			[
 				"ta",
 				"table-cell"
-			],
-			[
-				"bac",
-				"background-image"
 			],
 			[
 				"que",
@@ -320,10 +368,6 @@
 				"fileIds"
 			],
 			[
-				"res",
-				"response〔argument〕"
-			],
-			[
 				"fil",
 				"fileId〔argument〕"
 			],
@@ -470,87 +514,11 @@
 			[
 				"translate",
 				"translateGridColumn"
-			],
-			[
-				"exa",
-				"expandableRowTemplates"
-			],
-			[
-				"gri",
-				"gridOptions"
-			],
-			[
-				"el",
-				"elms"
-			],
-			[
-				"exi",
-				"exists"
-			],
-			[
-				"emp",
-				"employeeRouterProvider"
-			],
-			[
-				"pr",
-				"props"
-			],
-			[
-				"op",
-				"option	Tag"
-			],
-			[
-				"tras",
-				"translateData〔argument〕"
-			],
-			[
-				"toolb",
-				"toolbarButton〔variable〕"
-			],
-			[
-				"hotke",
-				"hotkeys"
-			],
-			[
-				"timeou",
-				"timeout"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 3368,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/resizable.js",
-			"settings":
-			{
-				"buffer_size": 1438,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 496,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 2337,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -694,16 +662,137 @@
 	"expanded_folders":
 	[
 		"/D/NodeJs/acing_test",
-		"/D/NodeJs/acing_test/bower_components",
-		"/D/NodeJs/acing_test/bower_components/angular",
-		"/D/NodeJs/acing_test/bower_components/jquery",
-		"/D/NodeJs/acing_test/bower_components/jquery/dist",
-		"/D/NodeJs/acing_test/css",
-		"/D/NodeJs/acing_test/img",
-		"/D/NodeJs/acing_test/js"
+		"/D/NodeJs/acing_test/app",
+		"/D/NodeJs/acing_test/app/controllers",
+		"/D/NodeJs/acing_test/app/routes",
+		"/D/NodeJs/acing_test/app/views",
+		"/D/NodeJs/acing_test/config",
+		"/D/NodeJs/acing_test/config/env",
+		"/D/NodeJs/acing_test/public",
+		"/D/NodeJs/acing_test/public/css",
+		"/D/NodeJs/acing_test/public/directive",
+		"/D/NodeJs/acing_test/public/game-modules",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/config",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/controllers",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/services",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/views",
+		"/D/NodeJs/acing_test/public/game-modules/core",
+		"/D/NodeJs/acing_test/public/game-modules/core/config",
+		"/D/NodeJs/acing_test/public/game-modules/core/controllers",
+		"/D/NodeJs/acing_test/public/game-modules/core/directive",
+		"/D/NodeJs/acing_test/public/game-modules/core/services",
+		"/D/NodeJs/acing_test/public/game-modules/core/views",
+		"/D/NodeJs/acing_test/public/lib",
+		"/D/NodeJs/acing_test/public/lib/jquery-ui"
 	],
 	"file_history":
 	[
+		"/D/NodeJs/acing_test/public/css/game.css",
+		"/D/NodeJs/acing_test/public/game-config.js",
+		"/D/NodeJs/acing_test/app/routes/testcasegroup.server.routes.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/controllers/core.client.controller.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/views/core.client.view.html",
+		"/D/NodeJs/acing_test/app/views/admin.server.view.html",
+		"/D/NodeJs/acing_test/app/views/index.server.view.html",
+		"/D/NodeJs/acing_test/config/env/all.js",
+		"/D/NodeJs/acing_test/config/env/production.js",
+		"/D/NodeJs/acing_test/app/controllers/testcase.server.controller.js",
+		"/D/NodeJs/acing_test/app/routes/testcase.server.routes.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/directive/ui-drag-text.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/directive/ng-enter.js",
+		"/D/NodeJs/acing_test/public/lib/sortable/bower.json",
+		"/D/NodeJs/acing_test/public/game-modules/core/directive/resizable.js",
+		"/D/NodeJs/acing_test/app/models/testcase.server.model.js",
+		"/D/NodeJs/acing_test/package.json",
+		"/D/NodeJs/acing_test/public/game-modules/core/directive/html.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/services/testcases.client.service.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/views/view-testcasegroup.client.view.html",
+		"/D/NodeJs/acing_test/bower.json",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/controllers/testcasegroups.client.controller.js",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/controllers/choosegroup.client.controller.js",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/services/testcasegroups.client.service.js",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/views/choosegroup.client.view.html",
+		"/D/NodeJs/acing_test/public/game-modules/core/config/core.client.routes.js",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/config/choosegroup.client.routers.js",
+		"/D/NodeJs/acing_test/public/game-modules/choosegroup/choosegroup.client.module.js",
+		"/D/NodeJs/acing_test/public/game-modules/core/core.client.module.js",
+		"/D/NodeJs/acing_test/public/modules/core/config/core.client.routes.js",
+		"/D/NodeJs/acing_test/public/modules/core/core.client.module.js",
+		"/D/NodeJs/acing_test/config/express.js",
+		"/D/NodeJs/acing_test/public/gamemodules/core/core.client.module.js",
+		"/D/NodeJs/acing_test/public/gamemodules/core/views/core.client.view.html",
+		"/D/NodeJs/acing_test/public/gamemodules/core/controllers/core.client.controller.js",
+		"/D/NodeJs/acing_test/public/gamemodules/core/directive/resizable.js",
+		"/D/NodeJs/acing_test/public/gamemodules/core/config/core.client.routes.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/testcase.client.module.js",
+		"/D/NodeJs/acing_test/public/application.js",
+		"/D/NodeJs/acing_test/public/game.js",
+		"/D/NodeJs/acing_test/public/config.js",
+		"/D/NodeJs/acing_test/public/gamemodules/game/game.client.module.js",
+		"/D/NodeJs/acing_test/config/config.js",
+		"/D/NodeJs/acing_test/config/env/development.js",
+		"/D/NodeJs/acing_test/public/game-modules/game/config/game.client.routes.js",
+		"/D/NodeJs/acing_test/public/game-modules/game/views/index.client.view.html",
+		"/D/NodeJs/acing_test/public/game-modules/game/controllers/game.client.controller.js",
+		"/D/NodeJs/acing_test/public/game-modules/game/directive/resizable.js",
+		"/D/NodeJs/acing_test/public/game-modules/game/directive/resizable",
+		"/D/NodeJs/acing_test/app/views/layout.server.view.html",
+		"/D/NodeJs/acing_test/public/modules/testcases/views/create-testcase.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/testcases/controllers/testcases.client.controller.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/views/edit-testcase.client.view.html",
+		"/D/NodeJs/acing_test/public/directive/resizable.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/views/view-testcase.client.view.html",
+		"/D/NodeJs/acing_test/public/directive/html.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/services/testcasegroups.client.service.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/config/testcases.client.routes.js",
+		"/D/NodeJs/acing_test/public/directive/bindHtmlUnsafe.js",
+		"/D/NodeJs/acing_test/app/routes/upload.server.routes.js",
+		"/D/NodeJs/acing_test/app/controllers/upload.server.controller.js",
+		"/D/NodeJs/acing_test/app/routes/core.server.routes.js",
+		"/D/NodeJs/acing_test/public/mylib/ckeditor/config.js",
+		"/D/NodeJs/acing_test/app/controllers/testcasegroup.server.controller.js",
+		"/D/NodeJs/acing_test/public/mylib/ckeditor/plugins/image/dialogs/image.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/views/create-testcasegroup.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/config/testcasegroups.client.routes.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/services/testcases.client.service.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/views/list-testcasegroups.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/testcases/views/list-testcases.client.view.html",
+		"/D/NodeJs/acing_test/app/tests/article.server.model.test.js",
+		"/D/NodeJs/acing_test/public/modules/testcases/config/testcases.client.config.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/testcasegroup.client.module.js",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/views/edit-testcasegroup.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/users/views/authentication/signup.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/core/views/home.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/core/views/header.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/users/views/authentication/signin.client.view.html",
+		"/D/NodeJs/acing_test/public/modules/testcasegroups/tests/articles.client.controller.test.js",
+		"/D/NodeJs/acing_test/public/modules/articles/config/testcasegroups.client.config.js",
+		"/D/NodeJs/acing_test/public/modules/articles/testcasegroup.client.module.js",
+		"/D/NodeJs/acing_test/public/modules/articles/config/testcasegroups.client.routes.js",
+		"/D/NodeJs/acing_test/config/env/test.js",
+		"/D/NodeJs/acing_test/config/env/secure.js",
+		"/D/NodeJs/acing_test/app/libs/utils.js",
+		"/D/NodeJs/acing_test/app/controllers/users.server.controller.js",
+		"/D/NodeJs/acing_test/app/controllers/core.server.controller.js",
+		"/D/NodeJs/acing_test/config/init.js",
+		"/D/NodeJs/acing_test/config/passport.js",
+		"/D/NodeJs/acing_test/app/models/testcasegroup.model.js",
+		"/D/NodeJs/acing_test/app/models/user.server.model.js",
+		"/D/NodeJs/acing_test/index.html",
+		"/D/NodeJs/acing_test/.bowerrc",
+		"/D/NodeJs/acing_test/.csslintrc",
+		"/D/NodeJs/acing_test/.gitignore",
+		"/D/NodeJs/acing_test/.editorconfig",
+		"/D/NodeJs/acing_test/Dockerfile",
+		"/D/NodeJs/acing_test/fig.yml",
+		"/D/NodeJs/acing_test/gruntfile.js",
+		"/D/NodeJs/acing_test/README.md",
+		"/D/NodeJs/acing_test/Procfile",
+		"/D/NodeJs/acing_test/css/main.css",
+		"/D/NodeJs/acing_test/js/app.js",
+		"/C/Users/thanhle/Desktop/4. AcingCase March 29/document.json",
+		"/D/temp/bower.json",
 		"/D/NodeJs/acing_test/js/resizable.js",
 		"/D/NodeJs/store_management/sources/server_backend/app/views/admin.server.view.html",
 		"/D/NodeJs/store_management/sources/server_backend/app/views/index.server.view.html",
@@ -720,128 +809,25 @@
 		"/D/Android/SwipeBackLayout/sample_sherlock/src/main/java/me/imid/swipebacklayout/demo/sherlock/SwipeBackSherlockActivity.java",
 		"/D/Android/SwipeBackLayout/sample_sherlock/src/main/java/me/imid/swipebacklayout/demo/sherlock/DemoSherlockActivity.java",
 		"/D/Android/SwipeBackLayout/sample_sherlock/src/main/AndroidManifest.xml",
-		"/D/NodeJs/acing_test/bower.json",
 		"/D/Android/SwipeBackLayout/sample_sherlock/src/main/res/values/styles.xml",
 		"/D/Android/SwipeBackLayout/library/src/main/java/me/imid/swipebacklayout/lib/app/SwipeBackActivityBase.java",
 		"/D/Android/SwipeBackLayout/sample_sherlock/src/main/java/me/imid/swipebacklayout/demo/sherlock/PreferenceUtils.java",
 		"/D/NodeJs/store_management/sources/server_backend/public/config.lazyload.js",
 		"/C/Users/thanhle/.gitconfig",
 		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.021.receiptvoucher/controllers/app.021.receiptvoucher.list.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/services/utils.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/core/l10n/vi.json",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.009.report/controllers/sys.009.report.list.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.018.printtemplate/controllers/app.018.printtemplate.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.009.report/config/sys.009.report.client.routes.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.018.printtemplate/config/app.018.printtemplate.client.routes.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/lib/jquery/bower.json",
-		"/D/NodeJs/store_management/sources/server_backend/public/lib/json-edit/js/directives.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/lib/json-edit/bower_components/angular-ui-sortable/sortable.min.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.003.module/controllers/sys.003.module.add.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/module_template/root/controllers/name.add.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/module_template/root/controllers/extend.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.006.otherlist/views/sys.006.otherlist.add.client.view.html",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.003.module/views/sys.003.module.add.client.view.html",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.009.report/controllers/extend.client.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/module_template/rename.json",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.009.report/views/sys.009.report.list.expandable.client.view.html",
-		"/D/NodeJs/store_management/sources/server_backend/module_template/template.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.009.report/config/sys.009.report.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/module_template/root/config/name.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.008.property/config/sys.008.property.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/app/controllers/core.server.controller.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/users/config/users.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/users/config/_users.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.008.property/config/_sys.008.property.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.007.propertyset/config/_sys.007.propertyset.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.007.propertyset/config/sys.007.propertyset.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.006.otherlist/config/_sys.006.otherlist.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.006.otherlist/config/sys.006.otherlist.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.005.otherlisttype/config/_sys.005.otherlisttype.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.005.otherlisttype/config/sys.005.otherlisttype.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.004.modulepack/config/_sys.004.modulepack.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.004.modulepack/config/sys.004.modulepack.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.003.module/config/_sys.003.module.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.003.module/config/sys.003.module.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.002.systemuser/config/_sys.002.systemuser.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.002.systemuser/config/sys.002.systemuser.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.001.store/config/_store.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/sys.001.store/config/store.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/config/env/all.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/core/config/_core.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/core/config/core.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.022.paymentvoucher/config/_app.022.paymentvoucher.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.022.paymentvoucher/config/app.022.paymentvoucher.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.021.receiptvoucher/config/_app.021.receiptvoucher.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.021.receiptvoucher/config/app.021.receiptvoucher.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.020.storesetting/config/_app.020.storesetting.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.020.storesetting/config/app.020.storesetting.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.019.storemodule/config/_app.019.storemodule.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.019.storemodule/config/app.019.storemodule.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.018.printtemplate/config/_app.018.printtemplate.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.018.printtemplate/config/app.018.printtemplate.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.017.destroyorder/config/_app.017.destroyorder.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.017.destroyorder/config/app.017.destroyorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.016.transferorder/config/app.016.transferorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.016.transferorder/config/_app.016.transferorder.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.015.returnbuyorder/config/_app.015.returnbuyorder.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.015.returnbuyorder/config/app.015.returnbuyorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.014.buyorder/config/app.014.buyorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.013.returnsaleorder/config/app.013.returnsaleorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.014.buyorder/config/_app.014.buyorder.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.012.saleorder/config/app.012.saleorder.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.012.saleorder/config/_app.012.saleorder.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.009.productproperty/config/_app.009.productproperty.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.011.stockchecking/config/_app.011.stockchecking.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.011.stockchecking/config/app.011.stockchecking.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.009.productproperty/config/app.009.productproperty.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.010.pricetable/config/_app.010.pricetable.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.010.pricetable/config/app.010.pricetable.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.008.productcategory/config/_app.008.productcategory.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.008.productcategory/config/app.008.productcategory.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.007.product/config/_app.007.product.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.007.product/config/app.007.product.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.006.customersupplier/config/_app.006.customersupplier.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.006.customersupplier/config/app.006.customersupplier.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.005.customerbuyer/config/_app.005.customerbuyer.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.005.customerbuyer/config/app.005.customerbuyer.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.004.customerlevel/config/_app.004.customerlevel.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.004.customerlevel/config/app.004.customerlevel.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.003.storebranch/config/_app.003.storebranch.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.003.storebranch/config/app.003.storebranch.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.002.storeemployee/config/settings.employee.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.002.storeemployee/config/_settings.employee.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.001.dashboard/config/_dashboard.client.module.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/modules/app.001.dashboard/config/dashboard.client.config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/grid-expandable.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/app.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/config.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/humans.txt",
-		"/D/NodeJs/store_management/sources/server_backend/public/app.ctrl.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/services/ui-load.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-jq.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/services/toolbar.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/services/notify.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/services/api-request.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/filters/html.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/filters/fromNow.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-uploader-thumb.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-toggleclass.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-splitter.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-shift.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-select.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-scroll.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-role.js",
-		"/D/NodeJs/store_management/sources/server_backend/public/directives/ui-print.js"
+		"/D/NodeJs/store_management/sources/server_backend/public/services/utils.js"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			"D:\\NodeJs\\acing_test\\app,D:\\NodeJs\\acing_test\\config",
+			"D:\\NodeJs\\acing_test\\app",
 			"D:\\NodeJs\\store_management\\sources\\server_backend\\public\\modules",
 			"D:\\NodeJs\\store_management\\sources\\server_backend\\public\\",
 			"D:\\NodeJs\\store_management\\sources\\server_backend\\public\\directives\\",
@@ -881,9 +867,29 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"printMessageNotFound",
+			"scrollToBottom",
+			"scrollDialogToBottom",
+			"ngEn",
+			"ngEnt",
+			"dialog-content",
+			"jsGameFiles",
+			"TestCaseGroupsInfoController",
+			"TestCaseGroupsEditController",
+			"TestCaseGroupsController",
+			"TestCasesController",
+			"articleForm",
+			"find",
+			"btnChangeScreenClick",
+			"document-management-dev",
+			"document",
+			"mongo",
+			"article",
+			"articleByID",
+			"extractKeywords",
 			"EDGE_TOP",
 			"EDGE_LEFT",
 			"mInitialEdgeTouched",
@@ -991,27 +997,7 @@
 			"'xeditable'",
 			"xeditable",
 			"directiveName",
-			"render",
-			"postrender",
-			"editableText",
-			"text",
-			"priori",
-			"function_list",
-			"resetForm",
-			"resolve",
-			"resolve:",
-			"resolve",
-			"fromProvider",
-			"fromCon",
-			"$TemplateFactory",
-			"fromConfig",
-			"fromProvider",
-			"ncyBreadcrumb",
-			"console.log",
-			"buildTemplate",
-			"role",
-			"shouldRender",
-			"modules1"
+			"render"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1019,6 +1005,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"scrollDialogToBottom",
+			"TestCasesInfoController",
+			"TestCasesEditController",
+			"TestCasesController",
+			"form",
 			"fieldForm",
 			"conditionForm",
 			"angular.module(AppConf.appModule).",
@@ -1141,12 +1132,7 @@
 			"m-r-xs",
 			"'",
 			"",
-			"time: Date.now()",
-			"delivered_to_company",
-			"next.ifError(err);",
-			"/groupon",
-			"_groupon",
-			"Groupon"
+			"time: Date.now()"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1157,135 +1143,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3368,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2960,
-								2960
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 889.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/resizable.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1438,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								861,
-								861
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 496,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								451,
-								451
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1853,
-								1853
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2517.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1322,7 +1187,7 @@
 	"project": "acting_test.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1465,9 +1330,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "h",
 		"selected_items":
 		[
+			[
+				"h",
+				"D:\\NodeJs\\HoSo\\HoSo.sublime-project"
+			],
 			[
 				"api",
 				"D:\\NodeJs\\store_management\\sources\\server_api\\gostore_api.sublime-project"
