@@ -42,12 +42,8 @@ function TestCasesEditController($scope, $stateParams, $location, Authentication
             reasoning: this.reasoning
         });
         testcase.$save(function(response) {
-            $scope.code = $scope.code + 1;
-            $scope.keywords = '';
-            $scope.parent_code = '';
-            $scope.content = '';
-            $scope.reasoning = '';
             Notify.addSuccess();
+            $location.path('testcasegroups/' + $stateParams.testcasegroupId);
         }, function(errorResponse) {
             $scope.error = errorResponse.data.message;
         });

@@ -7,8 +7,8 @@
 
     function MainController($scope, $state, $stateParams, $timeout, toaster, TestCases) {
         var gameId = $stateParams.gameId;
-        var currentState = 1;
         var data;
+        $scope.currentState = 1;
         $scope.dialogData = [];
         $scope.notepadData = [];
         $scope.model = {
@@ -17,6 +17,7 @@
             note: '',
             answer: ''
         };
+        $scope.answers = [];
 
         if (!gameId) {
             $state.go('choosegroup');
@@ -44,7 +45,7 @@
         }
 
         function btnNextClick() {
-            currentState++;
+            $scope.currentState++;
             loadState();
         }
 
@@ -65,7 +66,7 @@
 
         function loadState() {
             var testcase = _.find(data, {
-                state: currentState,
+                state: $scope.currentState,
                 type: 'begin_text'
             })
             if (testcase) {
@@ -83,7 +84,7 @@
                 var parentKeywords = {};
                 var childKeywords = {};
                 var infoP = _.filter(data, function(item) {
-                    return item.state === currentState &&
+                    return item.state === $scope.currentState &&
                         item.type === 'infop' &&
                         item.keywords &&
                         _.findIndex(item.keywords, function(keyword) {
@@ -98,7 +99,7 @@
                     _.forEach(infoP, function(infop) {
                         // continue find all child info
                         var info = _.filter(data, function(item) {
-                            return item.state === currentState &&
+                            return item.state === $scope.currentState &&
                                 item.type === 'info' &&
                                 item.parent_code === infop.code &&
                                 item.keywords &&
@@ -128,7 +129,7 @@
                 } else {
                     // find all info have no parent
                     var info = _.filter(data, function(item) {
-                        return item.state === currentState &&
+                        return item.state === $scope.currentState &&
                             item.type === 'info' &&
                             !item.parent_code &&
                             item.keywords &&
@@ -164,7 +165,7 @@
             var inquired = $scope.model.inquired.split(' ');
             var keywordsFound = [];
             var message = _.find(data, function(item) {
-                return item.state === currentState &&
+                return item.state === $scope.currentState &&
                     item.type === 'message' &&
                     item.keywords &&
                     _.findIndex(item.keywords, function(keyword) {
@@ -183,7 +184,7 @@
                 r.type = 'notfound';
                 // Find inquired keywords for match
                 var f = _.filter(data, function(item) {
-                    return item.state === currentState &&
+                    return item.state === $scope.currentState &&
                         item.keywords &&
                         _.findIndex(item.keywords, function(keyword) {
                             var r = inquired.indexOf(keyword);
@@ -231,7 +232,7 @@
         function noteEnter() {
             var r = {
                 type: 'note',
-                state: currentState,
+                state: $scope.currentState,
                 content: $scope.model.note.toString()
             }
             $scope.notepadData.push(r);
@@ -242,10 +243,11 @@
         function answerEnter() {
             var r = {
                 type: 'answer',
-                state: currentState,
+                state: $scope.currentState,
                 content: $scope.model.answer.toString()
             }
             $scope.notepadData.push(r);
+            $scope.answers.push(r.content);
             scrollNotepadToBottom();
             $scope.model.answer = '';
         }

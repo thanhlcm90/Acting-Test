@@ -32,6 +32,18 @@ function TestCaseGroupsInfoController($scope, $stateParams, $location, Authentic
         }
     };
 
+    $scope.removeTestCase = function(testcase) {
+        if (testcase) {
+             $scope.testcase = TestCases.get({
+                testcaseId: testcase._id
+            }, function(data) {
+                $scope.testcase.$remove(function() {
+                    $scope.tableParams.reload();
+                });
+            });
+        }
+    };
+
     $scope.findOne = function() {
         $scope.testcasegroup = TestCaseGroups.get({
             testcasegroupId: $stateParams.testcasegroupId
@@ -60,7 +72,7 @@ function TestCaseGroupsInfoController($scope, $stateParams, $location, Authentic
             page: 1, // show first page
             count: 10, // count per page
             sorting: {
-                code: 'asc' // initial sorting
+                code: 'desc' // initial sorting
             }
         }, {
             total: 0, // length of data

@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="testcase-item" ng-if="item.type=='answer'">
                                     <br />
-                                    <span class="notepad-note" style="font-weight: bold;">Q{{item.state}} ANSWER</span>
+                                    <span class="notepad-note" style="font-weight: bold;">YOUR ANSWER FOR QUESTION {{item.state}}:</span>
                                     <br />
                                     <span class="notepad-note">{{item.content}}</span>
                                 </div>
@@ -101,7 +101,7 @@
                             <label>Answer</label>
                             <div class="input-button-group">
                                 <input type="text" ng-model="model.answer" ng-enter="answerEnter()">
-                                <span class="button next-btn" ng-click="btnNextClick()" />
+                                <span class="button next-btn" ng-click="btnNextClick()" ng-if="answers.length>=currentState" />
                             </div>
                         </div>
                     </div>

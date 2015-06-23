@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'garreg';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Garamond'), url('garreg.ttf') format('truetype');
+}
+
 body {
     overflow: hidden;
+    font-family: 'garreg'
 }
 
 .app:before {

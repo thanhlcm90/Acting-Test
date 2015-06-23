@@ -35,8 +35,15 @@
                     <td data-title="'State No.'" sortable="'state'">{{item.state}}</td>
                     <td data-title="'Keywords'" sortable="'keywords'">{{joinArray(item.keywords)}}</td>
                     <td data-title="'Parent ID'" sortable="'parent_code'">{{item.parent_code}}</td>
-                    <td data-title="'Content'" sortable="'content'"><p ng-bind-html="item.content | html"></p></td>
+                    <td data-title="'Content'" sortable="'content'">
+                        <p ng-bind-html="item.content | html"></p>
+                    </td>
                     <td data-title="'Reasoning'" sortable="'reasoning'">{{item.reasoning}}</td>
+                    <td>
+                        <a class="btn btn-default" data-ng-click="$event.stopPropagation();removeTestCase(item);" data-toggle="tooltip" data-placement="bottom" title="Remove">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
                 </tr>
             </tbody>
         </table>
