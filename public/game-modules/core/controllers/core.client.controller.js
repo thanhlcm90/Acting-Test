@@ -39,9 +39,9 @@
             loadState();
         });
 
-        function btnChangeScreenClick(button) {
-            $(".left-bar .button").removeClass('active');
-            $(".left-bar ." + button + "-btn").addClass('active');
+        function btnChangeScreenClick(button, container) {
+            $("." + container + " .button").removeClass('active');
+            $("." + container + " ." + button + "-btn").addClass('active');
         }
 
         function btnNextClick() {

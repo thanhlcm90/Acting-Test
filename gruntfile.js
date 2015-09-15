@@ -6,8 +6,8 @@ module.exports = function(grunt) {
         serverViews: ['app/views/**/*.*'],
         serverJS: ['gruntfile.js', 'server.js', 'config/**/*.js', 'app/**/*.js'],
         clientViews: ['public/modules/**/views/**/*.html'],
-        clientJS: ['public/js/*.js', 'public/modules/**/*.js'],
-        clientCSS: ['public/modules/**/*.css'],
+        clientJS: ['public/*.js', 'public/modules/**/*.js', 'public/game-modules/**/*.js'],
+        clientCSS: ['public/css/*.css'],
         mochaTests: ['app/tests/**/*.js']
     };
 
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['env:dev', 'lint', 'concurrent:default']);
+    grunt.registerTask('default', ['env:dev', 'concurrent:default']);
 
     // Debug task.
     grunt.registerTask('debug', ['lint', 'concurrent:debug']);

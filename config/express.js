@@ -83,7 +83,6 @@ module.exports = function(db) {
 		limit: '50mb'
 	}));
 	app.use(bodyParser.json({limit: '50mb'}));
-	app.use(bodyParser());
 	app.use(methodOverride());
 
 	// CookieParser should be above session
