@@ -1,0 +1,35 @@
+{% extends '../layout.server.view.html' %} {% block header %}
+<!--Header -->
+<header class="tutor-header">
+    <div class="tutor-header-bottom">
+        <p>TUTORIALS - HOW TO ACE YOURS BUSINESS CASES</p>
+    </div>
+</header>
+<!--end header-->
+<div class="tutorial-logo">
+    <img src="../img/frontend/images/logo.png" width="150" height="100">
+</div>
+{% endblock %} {% block content %}
+<section class="content">
+    <div class="main-content">
+        <div class="top-content">
+            <ul class="rec-top">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">FRAMEWORKS</a></li>
+                <li><a href="#">EXAMPLES<img class="dropdown" src="../img/frontend/images/triag.png"></a></li>
+                <li><a href="#">DIFFICULTIES<img class="dropdown" src="../img/frontend/images/triag.png"></a></li>
+            </ul>
+        </div>
+        {% for tutor in tutors %}
+        <div class="tutor">
+            <div class="tutor-logo">
+            </div>
+            <div class="tutor-content">
+                <h1>{{tutor.name}}</h1>
+                <p><span style="color:#F0A324">Samary :</span>{{tutor.content}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

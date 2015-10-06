@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<!--Header -->
+			{% block header %}{% endblock %}
+		</div>
+		<!--Main content-->
+		<div id="page-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<!--menu-->
+						<aside class="menu">
+							<ul>
+								<li><a href="/home">HOME</a></li>
+								<li><a href="/about">ABOUT</a></li>
+								<li><a href="/cases">CASES</a></li>
+								<li><a href="/tutorial">TUTORIALS</a></li>
+								<li><a href="/forum">FORUMS</a></li>
+							</ul>
+							<ul class="login">
+								<li><a href="#">SIGN UP</a></li>
+								<li><a href="#">SIGN IN</a></li>
+							</ul>
+						</aside><!--end menu-->
+					</div>
+					<div class="col-md-8">
+						{% block content %}{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div><!--end page_wrap-->
+		
+		
+	</div><!--end page-wrap-->
+</body>
+</html>

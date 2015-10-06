@@ -1,0 +1,78 @@
+{% extends '../layout.server.view.html' %} {% block header %}
+<header class="tutor-header">
+    <div class="tutor-header-bottom">
+        <p>FORUMS - PRACTIVE WIDTH YOUR PEERS</p>
+    </div>
+</header>
+<!--end header-->
+<div class="tutorial-logo">
+    <img src="../img/frontend/images/logo.png" width="150" height="100">
+</div>
+{% endblock %} {% block content %}
+<section class="content">
+    <div class="main-content">
+        <div class="top-content">
+            <ul class="rec-top-forum">
+                <li class="active"><a href="/forum">Q A</a></li>
+                <li><a href="/find">FIND PRACTICING PARTNERS</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+            </ul>
+        </div>
+        <div class="qa">
+            <table style="width:90%">
+                <tr>
+                    <th style="color:#FF6633; text-align:left;">SEARCH MOCK INTERVIEWERS BY</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="drop">
+                            <option>Available Date</option>
+                            <option>Available Date1</option>
+                            <option>Available Date2</option>
+                            <option>Available Date3</option>
+                        </select>
+                    </td>
+                    <td width="50%">
+                        <select class="drop">
+                            <option>Experience</option>
+                            <option>Experience1</option>
+                            <option>Experience2</option>
+                            <option>Experience3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="drop">
+                            <option>Available Time</option>
+                            <option>Available Time1</option>
+                            <option>Available Time2</option>
+                            <option>Available Time3</option>
+                        </select>
+                    </td>
+                    <td width="50%">
+                        <select class="drop">
+                            <option>Toppic</option>
+                            <option>Toppic1</option>
+                            <option>Toppic2</option>
+                            <option>Toppic3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% for find in finds %}
+        <div class="find">
+            <div class="find-content">
+                <h1>{{find.name}}</h1>
+                <p><span style="color:blue;">* I'm comfortable width topic:</span>Increase sales</p>
+                <p><span style="color:blue;">* I'm looking for someone to practive topic:</span>Organizational behaviours</p>
+                <p><span style="color:blue;">* Avaiable Time</span>8-10am Tuesday</p>
+                <img class="mess" src="../img/frontend/ images/mess.png">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<!--end content-->
+{% endblock %}

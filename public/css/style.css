@@ -1,0 +1,437 @@
+@font-face {
+    font-family: myFirstFont;
+	src:url(../css/manifesto.ttf);
+}
+@font-face {
+    font-family: mySecondFont;
+	src:url(../css/garreg.ttf);
+}
+*{
+	padding:0px;
+	margin:0px auto;
+}
+#wrapper{
+	width:960px;
+	margin:0px auto;
+	padding:0px;
+}
+.header-top{
+	height:250px;
+	width:100%;
+	background:#dae2eb;
+}
+.blue-tab{
+	background: url(../img/frontend/images/blue_tab.png) no-repeat ;
+	height:50px;
+	position:relative;
+	top:20px;
+}
+.blue-tab-text{
+	padding:12px 0 0 0;
+	margin-left:10px;
+	font-family:myFirstFont;
+	font-size:27px;
+	color:white;
+
+}
+.logo-bottom{
+	width:100%;
+	float:left;	
+}
+.logo{
+	width:250p;
+	height:150px;
+	float:left;
+	position:relative;
+	top:40px;
+	left:50px;
+}
+.orange-tab{
+	width:700px;
+	height:80px;
+	background: url(../img/frontend/images/orage_tab.png) no-repeat;
+	position:relative;
+	top:60px;
+	float:right;
+}
+.orange-tab-text{
+	font-size:36px;
+	font-family:myFirstFont;
+	padding:22px 0 0 0;
+	margin-left:50px;
+}
+.menu{
+	width:200px;
+	min-height:1000px;
+	float:left;
+}
+.menu ul li{
+	list-style:none;
+	padding:3px;
+	margin-top: 30px;
+}
+.menu ul li a{
+	text-decoration:none;
+	float:right;
+	font-family:myFirstFont;
+	margin-right:10px;
+	font-size:24px;
+	
+}
+.menu ul li:hover a{
+	color:#585353;	
+}
+.login{
+	margin-top:90px;	
+}
+.content{
+	background:url(../img/frontend/images/grid.png);
+	width:760px;
+	min-height:1000px;
+	float:left;
+}
+.main-content{
+	position:relative;	
+}
+.image1{
+	background: url(../img/frontend/images/triagle.png) no-repeat;
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:30px;
+	left:35px;
+}
+.image1 p{
+	font-family:myFirstFont;
+	font-size:16px;
+	color:white;
+	padding:5px;
+	text-align:center;
+	transform:translate(8px,70px);
+	-ms-transform:translate(8px,70px);
+	-webkit-transform:translate(8px,70px);
+}
+.image3{
+	width:300px;
+	height:300px;
+	background:url(../img/frontend/images/circle.png) no-repeat;
+	transform:translate(-20px,190px);
+	-ms-transform:translate(10px,190px);
+	-webkit-transform:translate(10px,190px);	
+}
+.image3 p{
+	font-family:myFirstFont;
+	font-size:16px;
+	color:#0D167A;
+	padding:5px;
+	text-align:center;
+	transform:translate(-50px,65px)
+}
+.image2{
+	width:300px;
+	height:300px;
+	background: url(../img/frontend/images/blaket.png) no-repeat;
+	position:absolute;
+	top:40px;
+	right:20px;
+}
+.image2 p{
+	font-family:myFirstFont;
+	font-size:16px;
+	color:white;
+	padding:5px;
+	text-align:center;
+	transform:translate(0,50px);	
+}
+/**ENF MAIN CSS **/
+/** CSS ABOUT **/
+.orange-tab-text-about{
+	font-size:33px;
+	font-family:myFirstFont;
+	padding:22px 0 0 0;
+	margin-left:50px;
+	color:#0033CC;
+}
+.profile{
+	position:relative;	
+}
+.avatar{
+	width:250px;
+	height:250px;
+	margin:10px 20px 0px 40px;
+	float:left;		
+}
+.avatar-small{
+	width:250px;
+	height:250px;
+	margin:20px 20px 0px 40px;
+	float:left;
+}
+.anh1{
+	position:absolute;
+	top:25px;
+	left:60px;
+}	
+.anh{
+	position:absolute;
+	top:30px;
+	left:60px;
+}
+.about{
+	width:650px;
+	height:250px;
+	margin:10px 10px 0px 40px;
+	padding:5px;
+
+}
+.about h1{
+	font-family:myFirstFont;
+	font-size:36px;
+	color:#F07408;
+	padding:60px 0 30px 0;
+}
+.about p{
+	font-family:myFirstFont;
+	font-size:24px;
+	color:#051DA7;
+	padding:0 0 5px 0;
+}
+.small{
+	margin-left:29px;	
+}
+/**end css about**/
+/**CSS case**/
+.case-header{
+	height:210px;
+	position:relative;
+}
+.case-header-bottom{
+	width:100%;
+	height:160px;
+	padding:70px 20px;
+	position:relative;
+	top:50px;
+	background:url(../img/frontend/images/banner-case.png) no-repeat;
+}
+.case-header-bottom p{
+	font-family:myFirstFont;
+	font-size:28px;
+	color:white;	
+}
+.case-logo{
+	position:absolute;
+	top:0px;
+	right:200px;
+	z-index:100;
+}
+.top-content{
+	width:100%;
+	height:50px;
+	float:left;	
+}
+.rec-top  li{
+	display:inline-block;
+	float:left;
+	width:170px;
+	height:50px;
+	margin:30px 0 0 15px;
+	padding:9px 0 0 0;
+	background:url(../img/frontend/images/rec-top.png) no-repeat;	
+}
+.rec-top  li a{
+	text-decoration:none;
+	font-family:myFirstFont;
+	font-size:16px;
+	padding:13px;
+	color:white;
+
+}
+.dropdown{
+	margin-left:15px;
+}
+.card{
+	width:700px;
+	margin:40px 10px 10px 10px;
+	padding:10px;
+	position:relative;
+	float:left;
+	background:#EEEEEE;
+	box-shadow:5px 5px #BBBBBB;	
+}
+.card-logo{
+	width:200px;
+	height:100px;
+	float:left;
+	margin:35px 5px 0 5px;	
+}
+.card-content{
+	width:450px;
+	margin:10px;
+	float:left;
+	position:relative;
+	font-size:16px;
+}
+.rating{
+
+	position:absolute;
+	top:5px;
+	right:-10px;		
+}
+/**end case css **/
+/** tutorial css**/
+.tutor-header{
+	height:210px;
+	position:relative;
+}
+.tutor-header-bottom{
+	width:100%;
+	height:160px;
+	padding:60px 20px;
+	position:relative;
+	top:50px;
+	background: url(../img/frontend/images/banner-tutorial.png) no-repeat;
+}
+.tutor-header-bottom p{
+	font-family:myFirstFont;
+	font-size:26px;
+	color:white;	
+}
+.tutorial-logo{
+	position:absolute;
+	top:0px;
+	right:250px;
+	z-index:100;
+}
+.tutor{
+	width:700px;
+	margin:40px 30px 10px 30px;
+	padding-bottom:25px;
+	padding-left:20px;
+	position:relative;
+	float:left;
+	background:#EEEEEE;
+	box-shadow:5px 5px #BBBBBB;	
+}
+.tutor-logo{
+	width:170px;
+	height:100px;
+	margin:30px 30px 0 30px;
+	background:#FF6633;
+	float:left;
+
+}
+.tutor-content{
+	width:450px;
+	margin:10px;
+	float:left;
+	position:relative;
+	font-size:16px;
+}
+.tutor-content h1{
+	color:#FF6633;
+	margin:20px 0 10px 0;
+}
+/** CSS FORUM**/
+.rec-top-forum li{
+	display:inline-block;
+	float:left;
+	height:50px;
+	margin:30px 0 0 10px;
+	padding:9px 0 0 0;
+}
+.rec-top-forum  li a{
+	text-decoration:none;
+	font-family:myFirstFont;
+	font-size:16px;
+	padding:13px;
+	color:white;
+	background:#BBBBBB;
+}
+.rec-top-forum  li a:hover{
+	background:#0033CC;
+}
+.rec-top-forum  li a:active{
+	background:#0033CC;
+}
+.qa{
+	width:700px;
+	margin:40px 30px 10px 30px;
+	padding-bottom:25px;
+	padding-left:0px;
+	position:relative;
+	float:left;
+	background:#EEEEEE;
+	box-shadow:5px 5px #BBBBBB;	
+}
+th,td{
+	padding:5px;
+	margin:10px;
+}
+td{
+	background:GhostWhite;
+}
+.right{
+	position:relative;
+	right:-190px;
+	float:right;
+}
+.drop{
+	width:250px;
+	border-radius:5px;
+	
+}
+.find{
+	width:300px;
+	height:150px;
+	margin:40px 30px 10px 30px;
+	padding-bottom:25px;
+	padding-left:20px;
+	position:relative;
+	float:left;
+	background:#EEEEEE;
+	box-shadow:5px 5px #BBBBBB;	
+}
+.find-content h1{
+	color:#FF6633;
+	margin:20px 0 10px 0;
+}
+.mess{
+	position:relative;
+	bottom:-20px;
+	right:-210px;
+}
+	
+.profile-forum{
+	position:relative;
+
+}
+.avatar-forum{
+	width:250px;
+	height:250px;
+	margin:50px 20px 0px 40px;
+	float:left;		
+}
+.anh{
+	position:absolute;
+	top:100px;
+	left:55px;
+}
+.about-forum{
+	width:450px;
+	height:300px;
+	margin:10px 10px 0px 40px;
+	padding:5px;
+
+}
+.about-forum h1{
+	font-family:myFirstFont;
+	font-size:36px;
+	color:#F07408;
+	padding:150px 0 30px 0;
+}
+.about-forum p{
+	font-family:mySecondFont;
+	font-size:18px;
+	color:#051DA7;
+	padding:0 0 5px 0;
+}

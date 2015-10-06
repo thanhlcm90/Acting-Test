@@ -1,0 +1,67 @@
+{% extends '../layout.server.view.html' %} {% block header %}
+<header class="tutor-header">
+    <div class="tutor-header-bottom">
+        <p>FORUMS - PRACTIVE WIDTH YOUR PEERS</p>
+    </div>
+</header>
+<div class="tutorial-logo">
+    <img src="../img/frontend/images/logo.png" width="150" height="100">
+</div>
+{% endblock %} {% block content %}
+<section class="content">
+    <div class="main-content">
+        <div class="top-content">
+            <ul class="rec-top-forum">
+                <li class="active"><a href="/forum">Q A</a></li>
+                <li><a href="/find">FIND PRACTICING PARTNERS</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+            </ul>
+        </div>
+        <div class="profile-forum">
+            <div class="avatar-forum">
+                <img src="../img/frontend/images/rec_profile.png">
+                <img class="anh" src="../img/frontend/images/profile_tran.png">
+            </div>
+            <div class="about-forum">
+                <h1>TRAN LE</h1>
+                <p>Member since:June 2015</p>
+            </div>
+        </div>
+        <div class="qa">
+            <table style="width:90%">
+                <tr>
+                    <th style="color:#FF6633; text-align:left;">SEARCH MOCK INTERVIEWERS BY</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="drop">
+                            <option>Comfortable width topics</option>
+                            <option>Available Date1</option>
+                            <option>Available Date2</option>
+                            <option>Available Date3</option>
+                        </select>
+                    </td>
+                    <td width="50%">
+                        <select class="drop">
+                            <option>Looking for someoone to pratice topics</option>
+                            <option>Experience1</option>
+                            <option>Experience2</option>
+                            <option>Experience3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="drop">
+                            <option>Available Time</option>
+                            <option>Available Time1</option>
+                            <option>Available Time2</option>
+                            <option>Available Time3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}
