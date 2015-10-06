@@ -1,0 +1,36 @@
+{% extends '../layout.server.view.html' %} 
+{% block header %}
+			<header class="case-header">
+            	<div class="case-header-bottom">
+                	<p>BUSINESS CASE SIMULATIONS</p>
+                </div>
+			</header><!--end header-->
+            <div class="tutorial-logo">
+                <img src="../img/frontend/images/logo.png" width="150" height="100">
+            </div>
+          {% endblock %}
+{% block content %} 
+						<!--content-->
+						<section class="content">
+							<div class="main-content">
+                            	<div class="top-content">
+                            	<ul class="rec-top">
+                                    {% for head in heads %}
+                                	<li><a href="#">{{head.name}}<img class="dropdown" src="../img/frontend/images/triag.png" width="10px" height="10px"></a></li>
+                                    {% endfor %}
+                                </ul>
+                                </div>
+                                {% for card in cards %}
+                                <div class="card">
+                                	<div class="card-logo">
+                                    	<img src="{{card.image}}" width="200px;">
+                                    </div>
+                                    <div class="card-content">
+                                        <p><span style="color:#F0A324">Category:</span>  {{card.element}} </p><img class="rating" src="../img/frontend/images/Rating.png">
+                                        <p><span style="color:#F0A324">Sumary:</span> {{card.content}}</p>
+                                    </div>
+                                </div>	
+                                {% endfor %}	
+                            </div>
+						</section><!--end content-->
+{% endblock %}
