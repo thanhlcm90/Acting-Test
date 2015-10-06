@@ -55,10 +55,11 @@
 	float:right;
 }
 .orange-tab-text{
-	font-size:36px;
-	font-family:myFirstFont;
-	padding:22px 0 0 0;
-	margin-left:50px;
+  font-size:36px;
+  font-family:myFirstFont;
+  padding:22px 0 0 0;
+  margin-left:50px;
+  color:#05268F;
 }
 .menu{
 	width:200px;
