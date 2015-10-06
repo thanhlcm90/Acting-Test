@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFirstFont;
-	src:url(../css/manifesto.ttf);
+	src:url(../css/MANIFESTO.ttf);
 }
 @font-face {
     font-family: mySecondFont;
@@ -39,7 +39,7 @@
 	float:left;	
 }
 .logo{
-	width:250p;
+	width:250px;
 	height:150px;
 	float:left;
 	position:relative;
@@ -76,6 +76,7 @@
 	font-family:myFirstFont;
 	margin-right:10px;
 	font-size:24px;
+	color:#240DF1;
 	
 }
 .menu ul li:hover a{
@@ -207,27 +208,28 @@
 }
 .case-header-bottom{
 	width:100%;
-	height:20px;
-	padding:70px 20px;
-	position:relative;
+	height:160px;
+	position: absolute;
 	top:50px;
 	background:url(../img/frontend/images/banner-case.png) no-repeat;
 }
 .case-header-bottom p{
+	transform:translate(10px,70px);
 	font-family:myFirstFont;
 	font-size:28px;
 	color:white;	
 }
 .case-logo{
 	position:absolute;
-	top:0px;
-	right:200px;
+	top:5px;
+	right:6%;
 	z-index:100;
 }
 .top-content{
 	width:100%;
 	height:50px;
-	float:left;	
+	float:left;
+	clear:both;	
 }
 .rec-top  li{
 	display:inline-block;
@@ -251,7 +253,7 @@
 }
 .card{
 	width:700px;
-	margin:40px 10px 10px 10px;
+	margin:30px 15px 10px 15px;
 	padding:10px;
 	position:relative;
 	float:left;
@@ -266,13 +268,12 @@
 }
 .card-content{
 	width:450px;
-	margin:10px;
+	margin:15px;
 	float:left;
 	position:relative;
 	font-size:16px;
 }
 .rating{
-
 	position:absolute;
 	top:5px;
 	right:-10px;		
@@ -285,26 +286,26 @@
 }
 .tutor-header-bottom{
 	width:100%;
-	height:20px;
-	padding:60px 20px;
-	position:relative;
+	height:160px;
+	position: absolute;
 	top:50px;
 	background: url(../img/frontend/images/banner-tutorial.png) no-repeat;
 }
 .tutor-header-bottom p{
+	transform:translate(10px,63px);
 	font-family:myFirstFont;
 	font-size:26px;
 	color:white;	
 }
 .tutorial-logo{
 	position:absolute;
-	top:0px;
-	right:250px;
+	top:5px;
+	right:25px;
 	z-index:100;
 }
 .tutor{
 	width:700px;
-	margin:40px 30px 10px 30px;
+	margin:40px 30px 10px 15px;
 	padding-bottom:25px;
 	padding-left:20px;
 	position:relative;
@@ -336,7 +337,7 @@
 	display:inline-block;
 	float:left;
 	height:50px;
-	margin:30px 0 0 10px;
+	margin:30px 0 0 30px;
 	padding:9px 0 0 0;
 }
 .rec-top-forum  li a{
@@ -403,6 +404,7 @@ td{
 	
 .profile-forum{
 	position:relative;
+	
 
 }
 .avatar-forum{
@@ -413,7 +415,7 @@ td{
 }
 .anh{
 	position:absolute;
-	top:100px;
+	top:50px;
 	left:55px;
 }
 .about-forum{
@@ -434,4 +436,8 @@ td{
 	font-size:18px;
 	color:#051DA7;
 	padding:0 0 5px 0;
+}
+.top{
+	width:100%;
+	height:70px;
 }
